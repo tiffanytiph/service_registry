@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: ${APP_VERSION}
+  application:
+    name: service-registry
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 5
+
+server:
+  port: 8761
