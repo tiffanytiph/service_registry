@@ -1,9 +1,6 @@
-app:
-  base-url: http://localhost:8082
-
 eureka:
   instance:
-    hostname: localhost
+    hostname: service-registry
   client:
     fetch-registry: false
     register-with-eureka: false

@@ -5,11 +5,11 @@ spring:
     name: service-registry
 
 eureka:
-  instance:
-    hostname: localhost
   client:
     fetch-registry: false
     register-with-eureka: false
+    service-url:
+      defaultZone: ${EUREKA_URL}
     lease-expiration-duration-in-seconds: 10
     lease-renewal-interval-in-seconds: 5
 
